@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+  <html lang="ru">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Виртуальный деканат</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+      <script type="text/javascript" src="js/materialize.js"></script>
+      <script type="text/javascript" src="js/schedule.js"></script>      
+    </head>
+
+    <body>
+      <style>
+        html, body
+        {
+          background-color: #F2F2F2;
+        }
+
+        .card-panel
+        {
+          width: 450px;
+          margin: 15px auto;
+        }   
+      </style>
+
+      <div>                                                                 <!--      Белая панелька сверху           -->
+        <nav>                                                                                 <!--                                      -->
+          <div class="nav-wrapper white">                                                     <!--                                      -->
+            <a href="user.html" data-target="slide-out" class="sidenav-trigger">
+              <i style="color: #7F1E2F !important" class="material-icons">menu</i>
+            </a>
+            <a class="brand-logo center">                                                     <!--                                      -->
+              <font color=#7F1E2F>                                                            <!--                                      -->
+                Единый деканат                                                                <!--                                      -->
+              </font>                                                                         <!--                                      -->
+            </a>                                                                              <!--                                      -->
+            <a href="https://stankin.ru/" style="margin-right: 1%" class="right">             <!--                                      -->
+              <img src="img/stankin_logo.png">                                                <!--                                      -->
+            </a>                                                                              <!--                                      -->
+          </div>                                                                              <!--                                      -->
+        </nav>
+
+
+
+
+
+
+        <ul id="slide-out" class="sidenav">
+          <li><div class="user-view">
+            <div class="background">
+              <img src="img/stankin_foto.jpg">
+            </div>
+
+            <a href="#user" id="lk-account-icon"><!----------------------------------------------- Тут аватарка пользователя, id элемента lk-account-icon -->
+              <img class="circle" src="img/material-icon-account.png">
+            </a>
+
+            <a href="user.html" id="lk-account-name"><span class="white-text name"><!----------------- Тут имя пользователя, id элемента lk-account-name -->
+              Пользователь
+            </span></a>
+
+            <a id="lk-account-email" href="#email"><span class="white-text email"><!-------------- Тут эл. почта, id элемента lk-account-email -->
+              example@gmail.com
+            </span></a>
+          </div>
+
+            </li>
+
+              <li><a href="schedule.html">
+                <i class="material-icons">date_range</i>
+                Моё расписание
+              </a></li>
+
+              <li><a href="sheet.html">
+                <i class="material-icons">description</i>
+                Ведомости
+              </a></li>
+
+              <li><a href="lk.html">
+                <i class="material-icons">account_box</i>
+                Личный кабинет
+              </a></li>
+
+              <li><div class="divider"></div></li>
+              <li><a class="subheader">Обратная связь</a></li>
+
+              <li><a href="https://edu.stankin.ru/">
+                ЭОС
+              </a></li>
+        </ul>
+
+      </div>
+
+    	<ul class="collection with-header">
+        	<li class="collection-header"><a href="sheet.html"><i class="medium material-icons" style="color: #7F1E2F">arrow_backward</i></a><h4>Базы данных</h4><h5>Ведомости по группам</h5></li>
+
+        	<li class="collection-item"><div>
+        		ИДБ-20-09
+        		<a href="#" class="secondary-content"><i class="material-icons" style="color: #7F1E2F">create</i></a>
+       		</div></li>
+
+        	<li class="collection-item"><div>
+        		ИДБ-20-10
+        		<a href="#" class="secondary-content"><i class="material-icons" style="color: #7F1E2F">create</i></a>
+        	</div></li>
+
+        	<li class="collection-item"><div>
+            ИДБ-20-11
+        		<a href="#" class="secondary-content"><i class="material-icons" style="color: #7F1E2F">create</i></a>
+        	</div></li>
+      	</ul>
+
+
+    </body>
+  </html>

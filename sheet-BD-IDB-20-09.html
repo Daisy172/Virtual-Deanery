@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	    <title>Виртуальный деканат</title>
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+	    <link rel="stylesheet" href="https://cdn.componentator.com/spa.min@18.css"/>
+	    <script src="https://cdn.componentator.com/spa.min@18.js"></script>
+	    <!-- <script src="js/jc.js"></script> -->
+	    <script type="text/javascript" src="js/materialize.js"></script>
+	    <script type="text/javascript" src="js/table.js"></script>
+    </head>
+
+    <body>
+    	<style>
+	        html, body
+	        {
+	          background-color: #F2F2F2;
+	        }
+
+	        .card-panel
+	        {
+	          width: 450px;
+	          margin: 15px auto;
+	        }
+    	</style>
+
+    	<div>
+    		Ведомость
+    	</div>
+
+    	<table class='table table-bordered mv20'>
+
+		    <thead> 
+		        <tr> 
+		            <th>Δti, ч</th>
+		            <th>0 - 5</th>
+		            <th>5 - 10</th>
+		            <th>10 - 15</th>
+		            <th>15 - 20</th>
+		            <th>20 - 25</th>
+		            <th>25 - 30</th>
+		            <th>30 - 35</th>
+		            <th>35 - 40</th>
+		            <th>40 - 45</th>
+		            <th>45 - 50</th>
+		            <th>50 - 55</th>
+		            <th>55 - 60</th>
+		            <th>60 - 65</th>
+		            <th>65 - 70</th>
+		            <th>70 - 75</th>
+		            <th>75 - 80</th>                                                  
+		        </tr>
+		    </thead>    
+
+		    <tbody data-jc="repeater__datasource" >             
+		        <script type="text/html">
+		            <tr data-index="$index">
+		                <td class='edit' data-type='textbox' data-field='Δti, ч'>{{ti}}</td>
+		                <td class='edit' data-type='textbox' data-field='student_id'>{{student_id}}</td>
+		                <td class='edit' data-type='textbox' data-field='score'>{{score}}</td>
+		                <td class='edit' data-type='textbox' data-field='grade'>{{grade}}</td>
+		                <td class='edit' data-type='textbox' data-field='date'>{{date}}</td>
+		                <td><button type='button' class='btn btn-danger btn-flat btn-xs' data-bind="rem__click:remRow"  data-id='$index' title='Удалить запись'><i class='fa fa-fw fa-remove'></i></button></td>        
+		            </tr>
+		        </script>   
+		    </tbody>    
+
+		    <tfooter> 
+		        <tr>
+		            <th><div data---="textbox__form.name__required:true;type:text;placeholder:Δti, ч;class:form-control input-sm;"></div></th>
+		            <th><div data---="textbox__form.student_id__required:true;placeholder:№ зач. книжки;class:form-control input-sm;"></div></th>
+		            <th><div data---="textbox__form.score__required:true;placeholder:балл;class:form-control input-sm;"></div></th>   
+		           	<th><div data---="textbox__form.grade__required:true;placeholder:оценка;class:form-control input-sm;"></div></th>
+		           	<th><div data---="textbox__form.date__required:true;placeholder:Дата;class:form-control input-sm;"></div></th> 
+		            <th><button type='button' class='btn btn-primary btn-flat btn-xs' data-bind="rem__click:addRow"  data-id='$index' title='Добавить запись'><i class='fa fa-fw fa-plus'></i></button></th>                        
+		        </tr>
+		    </tfooter>    
+		</table>                  
