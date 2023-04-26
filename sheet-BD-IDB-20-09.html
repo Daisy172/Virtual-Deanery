@@ -36,30 +36,21 @@
 
 		    <thead> 
 		        <tr> 
-		            <th>Δti, ч</th>
-		            <th>0 - 5</th>
-		            <th>5 - 10</th>
-		            <th>10 - 15</th>
-		            <th>15 - 20</th>
-		            <th>20 - 25</th>
-		            <th>25 - 30</th>
-		            <th>30 - 35</th>
-		            <th>35 - 40</th>
-		            <th>40 - 45</th>
-		            <th>45 - 50</th>
-		            <th>50 - 55</th>
-		            <th>55 - 60</th>
-		            <th>60 - 65</th>
-		            <th>65 - 70</th>
-		            <th>70 - 75</th>
-		            <th>75 - 80</th>                                                  
+		            <th>№</th>
+		            <th>Фамилия, инициалы</th>
+		            <th>№ зач. книжки</th>
+		            <th>балл</th>                        
+		           	<th style='width:150px'>оценка</th>
+		            <th>Дата</th>
+		            <th>Добавить</th>                             
 		        </tr>
 		    </thead>    
 
 		    <tbody data-jc="repeater__datasource" >             
 		        <script type="text/html">
 		            <tr data-index="$index">
-		                <td class='edit' data-type='textbox' data-field='Δti, ч'>{{ti}}</td>
+		                <td>{{index+1}}</td>
+		                <td class='edit' data-type='textbox' data-field='name'>{{name}}</td>
 		                <td class='edit' data-type='textbox' data-field='student_id'>{{student_id}}</td>
 		                <td class='edit' data-type='textbox' data-field='score'>{{score}}</td>
 		                <td class='edit' data-type='textbox' data-field='grade'>{{grade}}</td>
@@ -70,8 +61,9 @@
 		    </tbody>    
 
 		    <tfooter> 
-		        <tr>
-		            <th><div data---="textbox__form.name__required:true;type:text;placeholder:Δti, ч;class:form-control input-sm;"></div></th>
+		        <tr> 
+		            <th></th>
+		            <th><div data---="textbox__form.name__required:true;type:text;placeholder:Фамилия, инициалы;class:form-control input-sm;"></div></th>
 		            <th><div data---="textbox__form.student_id__required:true;placeholder:№ зач. книжки;class:form-control input-sm;"></div></th>
 		            <th><div data---="textbox__form.score__required:true;placeholder:балл;class:form-control input-sm;"></div></th>   
 		           	<th><div data---="textbox__form.grade__required:true;placeholder:оценка;class:form-control input-sm;"></div></th>
